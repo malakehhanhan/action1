@@ -16,7 +16,7 @@ jobs:
     
     - name: Print hello 
       run : echo "hello World from job-1"
-    - name: multiline command
+    - name: new command
       run: |
         touch 1.txt
         ls -la

@@ -30,6 +30,5 @@ jobs:
       run : echo "hello World from job-2"
     - name: Print Name
       run : echo "My pakcage name is ${{ env.MY_PACKAGE_NAME }}"
-      
-         - name:sleep
+       - name:sleep
          run :sleep 3

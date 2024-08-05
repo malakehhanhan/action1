@@ -12,12 +12,19 @@ jobs:
     steps:
     - name: Print hello 
       run : echo "hello World from job-1"
-       - name:sleep
+    - name: Multiline command
+      run : |
+        touch 1.txt
+        ls -la
+        
+          - name:sleep
          run :sleep 3
   job-2 :
     runs-on: ubuntu-latest
+    needs: [job-1]
     steps:
     - name: Print hello
       run : echo "hello World from job-2"
+      
          - name:sleep
          run :sleep 3

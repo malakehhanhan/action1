@@ -16,7 +16,6 @@ jobs:
       run : |
         touch 1.txt
         ls -la
-        
           - name:sleep
          run :sleep 3
   job-2 :

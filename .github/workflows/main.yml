@@ -12,7 +12,6 @@ jobs:
     steps:
     - name: Print hello 
       run : echo "hello World from job-1"
-
        - name:sleep
          run :sleep 3
          

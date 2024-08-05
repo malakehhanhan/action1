@@ -2,16 +2,13 @@
 #  GitHub Action Basics
 #---------------------------------------------------------------------
 name: My-GitHubActions-Basics
-
 on: 
   push:
     branches: 
       - main
-
 jobs:
   job-1 :
     runs-on: ubuntu-latest
-
     steps:
     - name: Print hello 
       run : echo "hello World from job-1"
